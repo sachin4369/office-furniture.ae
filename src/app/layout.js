@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Regent Seating Collection",
   description:
-    "Design & developed by Sachin Kumar. Technologies used: Nextjs, Tailwindcss, Javascript, HTML5, API, Responsive, code spliting:lazy loading, multiple layout",
+    "Design & developed by Sachin Kumar. Technologies used: Nextjs, Tailwindcss, Javascript, HTML5, API, Responsive Web Design, Code Spliting:Lazy Loading, Multiple Layout, Dynamic Routes",
 };
 
 export default function RootLayout({ children }) {

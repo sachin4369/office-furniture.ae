@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const getStudentChairsData = async()=>{
     let data = await fetch("http://localhost:3000/api/studentapi");
@@ -82,7 +83,12 @@ const StudentChairSeries = async()=>{
             key={item.id}
             className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 p-5"
           >
-            <img className="rounded-t-lg" src={item.Url} alt={item.Name} />
+            <Image
+              className="rounded-t-lg h-40 mx-auto object-fit" 
+              width={120}
+              height={100}
+              src={item.Url} 
+              alt={item.Name} />
             <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {item.Name}
             </h2>

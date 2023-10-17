@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 import SocialShareIcon from "@/app/components/SocialShare/page";
 
 const getCafeChairData = async (id) =>{
@@ -83,15 +84,17 @@ const page = async ({params}) => {
         </ol>
       </nav>
 
-      <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4">
-        <div className="w-96">
-            <img
-            className="object-cover w-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-auto hover:scale-125"
+      <div className="flex flex-col items-center pl-0 md:pl-20 bg-white border border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4">
+        <div className="w-52">
+        <Image
+            className="object-cover"
+            width={400}
+            height={400}
             src={cafe.Url}
             alt={cafe.Name}
             />
         </div>
-        <div className="flex flex-col justify-between leading-normal">
+        <div className="flex flex-col justify-between leading-normal pl-0 md:pl-20">
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {cafe.Name}
           </h2>

@@ -173,7 +173,7 @@ const ProductPage = () => {
             <p className="mb-3 font-normal text-gray-700 flex">
               Cafe chairs provide a stylish and cozy setting for leisurely moments. Their versatile design and materials create a welcoming ambiance, perfect for socializing, dining, or simply enjoying a coffee.
               <span>
-                <Image src="/images/rsc984.jpg" width={400} height={267} alt="Cafe chairs" />
+                <Image src="/images/rsc984.jpg" width={350} height={267} alt="Cafe chairs" />
               </span>
             </p>
             <a

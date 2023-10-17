@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import SocialShareIcon from "@/app/components/SocialShare/page";
 
 const getVisitorChairData = async (id) => {
@@ -80,15 +81,17 @@ const Page = async ({ params }) => {
           </li>
         </ol>
       </nav>
-      <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4">
-        <div>
-          <img
-            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-80 md:rounded-none md:rounded-l-lg"
+      <div className="flex flex-col items-center bg-white border pl-0 md:pl-20 border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4">
+      <div className="w-72">
+        <Image
+            className="object-cover"
+            width={400}
+            height={400}
             src={visitor.Url}
             alt={visitor.Name}
           />
         </div>
-        <div className="flex flex-col justify-between leading-normal">
+        <div className="flex flex-col justify-between leading-normal pl-0 md:pl-20">
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {visitor.Name}
           </h2>

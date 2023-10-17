@@ -83,17 +83,17 @@ const Page = async ({ params }) => {
         </ol>
       </nav>
 
-      <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4">
+      <div className="flex flex-col items-center bg-white border pl-0 md:pl-20 border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4">
         <div className=" w-52">
             <Image
             className="object-cover"
-            src={mesh.Url}
-            alt={mesh.Name}
             width={400}
             height={400}
+            src={mesh.Url}
+            alt={mesh.Name}
             />
         </div>
-        <div className="flex flex-col justify-between leading-normal">
+        <div className="flex flex-col justify-between leading-normal pl-0 md:pl-20">
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {mesh.Name}
           </h2>
