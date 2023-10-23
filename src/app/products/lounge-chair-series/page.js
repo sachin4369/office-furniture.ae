@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getLoungeChairData = async ()=> {
-  let data = await fetch("http://localhost:3000/api/loungeapi/");
+  let data = await fetch(process.env.URL + "/api/loungeapi/");
   data = await data.json();
   return data;
 }

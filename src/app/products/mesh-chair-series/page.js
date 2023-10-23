@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getMeshChairData = async () => {
-  let data = await fetch("http://localhost:3000/api/meshapi/");
+  let data = await fetch(process.env.URL + "/api/meshapi/");
   data = await data.json();
   return data;
 };

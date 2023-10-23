@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getCafeChairData = async () => {
-    let data = await fetch("http://localhost:3000/api/cafeapi/");
+    let data = await fetch(process.env.URL + "/api/cafeapi/");
     data = await data.json();
     return data;
 }

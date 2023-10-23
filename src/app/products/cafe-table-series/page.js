@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getCafeTableData = async () => {
-    let data = await fetch("http://localhost:3000/api/cafetableapi/");
+    let data = await fetch(process.env.URL + "/api/cafetableapi/");
     data = await data.json();
     return data;
 }

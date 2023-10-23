@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getStudentChairsData = async()=>{
-    let data = await fetch("http://localhost:3000/api/studentapi");
+    let data = await fetch(process.env.URL + "/api/studentapi");
     data = await data.json();
     return data
 }
