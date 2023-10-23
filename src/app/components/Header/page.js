@@ -9,10 +9,12 @@ const Header = () => {
     <header className="border-gray-200 bg-sky-50">
       <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href="/" className="flex items-center">
-          <img
+          <Image
             src="/images/regentseatingcollection.png"
             className="h-14 mr-3"
             alt="Flowbite Logo"
+            width={237}
+            height={56}
           />
         </Link>
         <button
