@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const getWorkStationChairData = async () =>{
-    let data = await fetch(process.env.URL + "/api/workstationapi/")
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  let data = await fetch(`${apiUrl}/api/workstationapi/`)
     data = await data.json();
     return data;
 }

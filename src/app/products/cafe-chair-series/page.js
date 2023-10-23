@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getCafeChairData = async () => {
-    let data = await fetch(process.env.URL + "/api/cafeapi/");
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    let data = await fetch(`${apiUrl}/api/cafeapi/`);
     data = await data.json();
     return data;
 }
