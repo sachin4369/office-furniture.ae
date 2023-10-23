@@ -4,7 +4,8 @@ import Image from "next/image";
 import SocialShareIcon from "@/app/components/SocialShare/page";
 
 const getWorkStationChairData = async (id) => {
-  let data = await fetch(`http://localhost:3000/api/workstationapi/${id}`);
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    let data = await fetch(`${apiUrl}/api/workstationapi/${id}`);
   data = await data.json();
   return data.result;
 };

@@ -3,7 +3,8 @@ import Image from "next/image";
 import SocialShareIcon from "@/app/components/SocialShare/page";
 
 const getStudentChairsData = async(id)=>{
-    let data = await fetch(`http://localhost:3000/api/studentapi/${id}`);
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    let data = await fetch(`${apiUrl}/api/studentapi/${id}`);
     data = await data.json();
     return data.result;
 }

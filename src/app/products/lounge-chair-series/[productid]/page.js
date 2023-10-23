@@ -5,7 +5,8 @@ import SocialShareIcon from "@/app/components/SocialShare/page";
 
 const getLoungeChairData = async (id) => {
   try {
-    let data = await fetch(`http://localhost:3000/api/loungeapi/${id}`);
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    let data = await fetch(`${apiUrl}/loungeapi/${id}`);
     data = await data.json();
     return data.result;
   } catch (error) {

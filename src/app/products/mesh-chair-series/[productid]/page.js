@@ -4,7 +4,8 @@ import SocialShareIcon from "@/app/components/SocialShare/page";
 import Image from "next/image";
 
 const getMeshChairData = async (id) => {
-  let data = await fetch(`http://localhost:3000/api/meshapi/${id}`);
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    let data = await fetch(`${apiUrl}/api/meshapi/${id}`);
   data = await data.json();
   return data.result;
 };
