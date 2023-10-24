@@ -31,8 +31,8 @@ const Catalog = () => {
                   </button>
                 </div>
               </div>
-              <div className="col-span-12 md:col-span-5 items-center order-1  md:order-2">
-                <Image src="/images/rsc-catalog-new.jpg" alt="Download Catalog" width={630} height={864} className="rotate-[3deg] w-full rounded-lg shadow-lg" />
+              <div className="col-span-12 md:col-span-5 items-center order-1  md:order-2 my-8 md:my-0">
+                <Image src="/images/rsc-catalog-new.jpg" alt="Download Catalog" width={630} height={864} className="rotate-[3deg] mx-auto md:mx-0 w-80 md:w-full rounded-lg shadow-lg" />
               </div>
             </div>
         </div>

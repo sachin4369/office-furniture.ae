@@ -12,10 +12,10 @@ const TrendingProducts = () => {
               alt="Trending Products"
               width={630}
               height={364}
-              className="rotate-[3deg] rounded-lg shadow-lg"
+              className="rotate-[3deg] rounded-lg shadow-lg mx-auto md:mx-0 w-80 md:w-full"
             />
           </div>
-          <div className="col-span-12 md:col-span-7 items-center">
+          <div className="col-span-12 md:col-span-7 items-center my-8 md:my-0">
             <div className="block text-center rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-ml-14 backdrop-blur-[30px]">
               <h1 className="mt-2 mb-16 text-3xl font-bold tracking-tight md:text-4xl xl:text-5xl">
                 Trending Products <br />

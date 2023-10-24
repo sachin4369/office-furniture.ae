@@ -4,7 +4,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <>
-<section className="bg-gradient-to-r from-sky-900 to-indigo-900 mb-12 py-12 relative">
+<section className="bg-gradient-to-r from-sky-900 to-indigo-900 mb-12 pb-12 md:py-12 relative">
     <div className="px-6 py-12 text-center md:px-12 lg:text-left max-w-screen-xl mx-auto px-4 py-2 ">
       <div className="container mx-auto">
         <div className="grid items-center gap-12 lg:grid-cols-2">
