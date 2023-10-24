@@ -13,7 +13,7 @@ const contactEmail = createTransport({
     service: 'gmail',
     auth: {
       user: "sachinchochi@gmail.com",
-      pass: "khochikhochi",
+      pass: "abc",
     },
   });
   
