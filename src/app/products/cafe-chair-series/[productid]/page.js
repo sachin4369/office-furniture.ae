@@ -91,7 +91,7 @@ const page = async ({params}) => {
           </ol>
         </nav>
   
-        <div className="flex flex-col items-center pl-0 md:pl-20 bg-white border border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4">
+        <div className="flex flex-col items-center pl-0 md:mb-10 md:pl-20 bg-white border border-gray-200 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4">
           <div className="w-52">
           <Image
               className="object-cover"
